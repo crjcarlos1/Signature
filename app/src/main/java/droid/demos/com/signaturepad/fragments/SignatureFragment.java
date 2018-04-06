@@ -17,9 +17,9 @@ import java.io.ByteArrayOutputStream;
 
 import droid.demos.com.signaturepad.R;
 
-public class SignaturePadFragment extends Fragment implements View.OnClickListener {
+public class SignatureFragment extends Fragment implements View.OnClickListener {
 
-    public static final String TAG = SignaturePadFragment.class.getSimpleName();
+    public static final String TAG = SignatureFragment.class.getSimpleName();
     private Button btnClearSignature, btnSaveSignature, btnSendSignature;
 
     private GestureOverlayView gestureView;
@@ -27,7 +27,7 @@ public class SignaturePadFragment extends Fragment implements View.OnClickListen
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.signature_pad_fragment, container, false);
+        View view = inflater.inflate(R.layout.signature_fragment, container, false);
 
         btnClearSignature = (Button) view.findViewById(R.id.btnClearSignature);
         btnSaveSignature = (Button) view.findViewById(R.id.btnSaveSignature);

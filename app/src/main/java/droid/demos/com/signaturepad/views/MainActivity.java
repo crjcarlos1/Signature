@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import droid.demos.com.signaturepad.R;
-import droid.demos.com.signaturepad.fragments.SignaturePadFragment;
+import droid.demos.com.signaturepad.fragments.SignatureFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
 
-        SignaturePadFragment signaturePadFragment = new SignaturePadFragment();
+        SignatureFragment signatureFragment = new SignatureFragment();
 
-        transaction.addToBackStack(SignaturePadFragment.TAG);
-        transaction.add(R.id.conteinerFragments, signaturePadFragment, SignaturePadFragment.TAG).commit();
+        transaction.addToBackStack(SignatureFragment.TAG);
+        transaction.add(R.id.conteinerFragments, signatureFragment, SignatureFragment.TAG).commit();
     }
 
 }
